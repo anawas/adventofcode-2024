@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Change path to input files.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Solved both parts.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input/day1_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input/day1_test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +40,9 @@
     &quot;accountId&quot;: &quot;d87c306e-45af-40f2-9035-c90645e979e4&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -111,7 +108,7 @@
       <workItem from="1732440498847" duration="655000" />
       <workItem from="1732441311960" duration="603000" />
       <workItem from="1732446896005" duration="570000" />
-      <workItem from="1733043844388" duration="2022000" />
+      <workItem from="1733043844388" duration="4733000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -141,7 +138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Change path to input files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change path to input files." />
+    <MESSAGE value="Solved both parts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved both parts." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
