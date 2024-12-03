@@ -1,9 +1,18 @@
-import java.nio.file.NoSuchFileException
-import kotlin.system.exitProcess
-
 class Day3 {
     fun part1(input: List<String>): Int {
-        return input.size
+        val operationRegex: Regex = """mul\(\d+,\d+\)""".toRegex()
+        val argumentRegex: Regex = """\d+,\d+""".toRegex()
+        var sum: Int = 0
+        for (line in input) {
+            for (operation in operationRegex.findAll(line)) {
+                val arguments = argumentRegex.findAll(operation.value)
+                for (matchResult in arguments) {
+                    val args = matchResult.value.split(",")
+                    sum += args[0].toInt() * args[1].toInt()
+                }
+            }
+        }
+        return sum
     }
 
     fun part2(input: List<String>): Int {
@@ -13,11 +22,6 @@ class Day3 {
 
 fun main() {
     val quiz = Day3()
-    try {
-        val input = readInput("day2_puzzle")
-        check(quiz.part1(input) == 6)
-    } catch (e: NoSuchFileException) {
-        println("ERROR -- Cannot read input")
-        exitProcess(1)
-    }
+    val input = readInput("day3_puzzle")
+    println("Solution: ${quiz.part1(input)}")
 }
