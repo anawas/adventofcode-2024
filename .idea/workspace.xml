@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Added template.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Deleted this file because it's been replaced by Day0.kt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day3.kt" afterDir="false" />
     </list>
@@ -58,31 +57,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build adventofcode-2024.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build aoc-2024.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Day1Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Day2Kt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Volumes/Daten/AdventOfCode/adventofcode-2024&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build adventofcode-2024.executor": "Run",
+    "Gradle.Build aoc-2024.executor": "Run",
+    "Kotlin.Day1Kt.executor": "Run",
+    "Kotlin.Day2Kt.executor": "Run",
+    "Kotlin.Day3Kt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Volumes/Daten/AdventOfCode/adventofcode-2024",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Kotlin.Day2Kt">
+}]]></component>
+  <component name="RunManager" selected="Kotlin.Day3Kt">
     <configuration name="Day1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1Kt" />
       <module name="aoc-2024.main" />
@@ -97,8 +97,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day3Kt" />
+      <module name="aoc-2024.main" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin.Day1Kt" />
+      <item itemvalue="Kotlin.Day2Kt" />
+      <item itemvalue="Kotlin.Day3Kt" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day3Kt" />
         <item itemvalue="Kotlin.Day2Kt" />
         <item itemvalue="Kotlin.Day1Kt" />
       </list>
@@ -129,7 +143,7 @@
       <workItem from="1733122251406" duration="1177000" />
       <workItem from="1733154035727" duration="7457000" />
       <workItem from="1733204678961" duration="288000" />
-      <workItem from="1733250516843" duration="893000" />
+      <workItem from="1733250516843" duration="5869000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -179,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733250535746</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Deleted this file because it's been replaced by Day0.kt">
+      <option name="closed" value="true" />
+      <created>1733251511908</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733251511908</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +225,8 @@
     <MESSAGE value="Less complex solution for part 2." />
     <MESSAGE value="Solved puzzle for day 2" />
     <MESSAGE value="Added template." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added template." />
+    <MESSAGE value="Deleted this file because it's been replaced by Day0.kt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted this file because it's been replaced by Day0.kt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
