@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Less complex solution for part 2.">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/aoc-2024.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day0.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Added template file for puzzles.">
+      <change afterPath="$PROJECT_DIR$/src/Day3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,13 +63,14 @@
     "Gradle.Build aoc-2024.executor": "Run",
     "Kotlin.Day1Kt.executor": "Run",
     "Kotlin.Day2Kt.executor": "Run",
+    "Kotlin.Day3Kt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Volumes/Daten/AdventOfCode/adventofcode-2024",
+    "last_opened_file_path": "C:/Users/menka/IdeaProjects/adventofcode-2024/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,11 +84,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\menka\IdeaProjects\adventofcode-2024\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\menka\IdeaProjects\adventofcode-2024\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day2Kt">
+  <component name="RunManager" selected="Kotlin.Day3Kt">
     <configuration name="Day1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day1Kt" />
       <module name="aoc-2024.main" />
@@ -106,8 +106,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day3Kt" />
+      <module name="aoc-2024.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day3Kt" />
         <item itemvalue="Kotlin.Day2Kt" />
         <item itemvalue="Kotlin.Day1Kt" />
       </list>
@@ -154,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733076115042</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added template file for puzzles.">
+      <option name="closed" value="true" />
+      <created>1733212078839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733212078839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +192,8 @@
     <MESSAGE value="Change path to input files." />
     <MESSAGE value="Solved both parts." />
     <MESSAGE value="Less complex solution for part 2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Less complex solution for part 2." />
+    <MESSAGE value="Added template file for puzzles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added template file for puzzles." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
