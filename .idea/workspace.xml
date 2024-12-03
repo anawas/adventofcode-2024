@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Added template file for puzzles.">
-      <change afterPath="$PROJECT_DIR$/src/Day3.kt" afterDir="false" />
+    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="First try with regex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day3.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +35,12 @@
     &quot;assignee&quot;: &quot;anawas&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/anawas/adventofcode-2024.git",
-    "accountId": "efa8b8ec-50f3-4181-96b5-fb3fcec2652b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/anawas/adventofcode-2024.git&quot;,
+    &quot;accountId&quot;: &quot;efa8b8ec-50f3-4181-96b5-fb3fcec2652b&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -63,7 +63,7 @@
     "Gradle.Build aoc-2024.executor": "Run",
     "Kotlin.Day1Kt.executor": "Run",
     "Kotlin.Day2Kt.executor": "Run",
-    "Kotlin.Day3Kt.executor": "Run",
+    "Kotlin.Day3Kt.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -170,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733212078839</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First try with regex">
+      <option name="closed" value="true" />
+      <created>1733213243138</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733213243138</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +201,8 @@
     <MESSAGE value="Solved both parts." />
     <MESSAGE value="Less complex solution for part 2." />
     <MESSAGE value="Added template file for puzzles." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added template file for puzzles." />
+    <MESSAGE value="First try with regex" />
+    <option name="LAST_COMMIT_MESSAGE" value="First try with regex" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -202,6 +211,11 @@
           <url>file://$PROJECT_DIR$/src/Day2.kt</url>
           <line>63</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/Day3.kt</url>
+          <line>9</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
