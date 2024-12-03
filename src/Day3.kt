@@ -55,13 +55,11 @@ class Day3 {
         var sum: Int = 0
         var status:OperationType = OperationType.DO
         for (command in alignment) {
-            println(command.token)
             if (command.operationTyp == OperationType.MUL) {
                 if (status == OperationType.DO) {
                     val arguments = argumentRegex.findAll(command.token)
                     for (matchResult in arguments) {
                         val args = matchResult.value.split(",")
-                        println(args)
                         sum += args[0].toInt() * args[1].toInt()
                     }
                 }
