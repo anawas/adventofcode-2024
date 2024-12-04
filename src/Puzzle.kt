@@ -1,4 +1,6 @@
-class Day0 {
+import utilities.readInput
+
+class Puzzle {
     fun part1(input: List<String>): Int {
         return input.size
     }
@@ -8,7 +10,7 @@ class Day0 {
     }
 }
 fun main() {
-    val quiz = Day0()
-    val input = readInput("day1_test")
-    check(quiz.part1(input) == 6)
+    val quiz = Puzzle()
+    val input = readInput("puzzle_test")
+    check(quiz.part1(input) == 3)
 }

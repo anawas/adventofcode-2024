@@ -1,4 +1,8 @@
-class Day1 {
+package day1
+
+import utilities.readInput
+
+class Puzzle {
     fun part1(input: List<String>): Long {
         val left = mutableListOf<Int>()
         val right = mutableListOf<Int>()
@@ -48,7 +52,7 @@ class Day1 {
     }
 }
 fun main() {
-    val quiz = Day1()
-    val input = readInput("day1_quiz")
-    print("Solution: ${quiz.part2(input)}")
+    val quiz = Puzzle()
+    val input = readInput("puzzle_test")
+    check(input.size == 4)
 }

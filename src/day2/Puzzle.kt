@@ -1,7 +1,10 @@
+package day2
+
+import utilities.readInput
 import java.nio.file.NoSuchFileException
 import kotlin.system.exitProcess
 
-class Day2 {
+class Puzzle {
     fun isIncreasing(reports: List<Int>): Boolean {
         for (i in 0 until reports.size-1) {
             if (reports[i] >= reports[i+1]) {
@@ -73,7 +76,7 @@ class Day2 {
 }
 
 fun main() {
-    val quiz = Day2()
+    val quiz = Puzzle()
     try {
         val input = readInput("day2_puzzle")
         println("Safe reports: ${quiz.part2(input)}")

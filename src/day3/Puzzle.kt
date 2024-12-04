@@ -1,4 +1,8 @@
-class Day3 {
+package day3
+
+import utilities.readInput
+
+class Puzzle {
     val operationRegex: Regex = """mul\(\d+,\d+\)""".toRegex()
     val doRegex: Regex = """do\(\)""".toRegex()
     val dontRegex: Regex = """don't\(\)""".toRegex()
@@ -23,14 +27,14 @@ class Day3 {
 
     // Helper class to store the tokens while parsing the memory
     data class Token(
-        val operationTyp:OperationType,
+        val operationTyp: OperationType,
         val token:String,
         val position:Int
     )
 
     fun part2(input: List<String>): Int {
         val tokenComparator = Comparator {
-            token1: Token, token2: Token ->  token1.position.compareTo(token2.position)
+                token1: Token, token2: Token ->  token1.position.compareTo(token2.position)
         }
         val alignment = mutableListOf<Token>()
         // Memory is split in multiple lines. We combine them first
@@ -53,7 +57,7 @@ class Day3 {
         alignment.sortWith(tokenComparator)
 
         var sum: Int = 0
-        var status:OperationType = OperationType.DO
+        var status: OperationType = OperationType.DO
         for (command in alignment) {
             if (command.operationTyp == OperationType.MUL) {
                 if (status == OperationType.DO) {
@@ -76,7 +80,7 @@ class Day3 {
 }
 
 fun main() {
-    val quiz = Day3()
+    val quiz = Puzzle()
     val input = readInput("day3_puzzle")
     println("Solution: ${quiz.part2(input)}")
 }
