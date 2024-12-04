@@ -7,3 +7,6 @@ build
 src/input
 
 .kotlin
+
+# Ignoring IDE files
+.idea
