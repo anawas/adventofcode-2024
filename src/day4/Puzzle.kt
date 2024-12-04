@@ -111,5 +111,5 @@ class Puzzle {
 fun main() {
     val quiz = Puzzle()
     val input = readInput("day4_puzzle")
-    println("Soultion: ${quiz.part1(input)}")
+    println("Solution: ${quiz.part1(input)}")
 }
