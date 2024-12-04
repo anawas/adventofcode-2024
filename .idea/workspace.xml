@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="Reoganized with packages. I think that's more convenient.">
+    <list default="true" id="8ba43657-457e-4f30-95f9-7d81f13c73c8" name="Changes" comment="First try on day 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day4/Puzzle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/day4/Puzzle.kt" afterDir="false" />
     </list>
@@ -35,12 +35,12 @@
     &quot;assignee&quot;: &quot;anawas&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/anawas/adventofcode-2024.git&quot;,
-    &quot;accountId&quot;: &quot;d87c306e-45af-40f2-9035-c90645e979e4&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/anawas/adventofcode-2024.git",
+    "accountId": "efa8b8ec-50f3-4181-96b5-fb3fcec2652b"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -67,13 +67,14 @@
     "Kotlin.Day2Kt.executor": "Run",
     "Kotlin.Day3.executor": "Run",
     "Kotlin.Day3Kt.executor": "Run",
-    "Kotlin.Day4.executor": "Debug",
+    "Kotlin.Day4.executor": "Run",
     "Kotlin.PuzzleKt (1).executor": "Run",
     "Kotlin.PuzzleKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/menka/IdeaProjects/adventofcode-2024/src/day4",
     "node.js.detected.package.eslint": "true",
@@ -154,6 +155,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Kotlin.Day2Kt" />
       <item itemvalue="Kotlin.PuzzleKt" />
       <item itemvalue="Kotlin.Day4" />
       <item itemvalue="Kotlin.Day2" />
@@ -169,14 +171,6 @@
         <item itemvalue="Kotlin.Day3" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -261,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733293952934</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="First try on day 4">
+      <option name="closed" value="true" />
+      <created>1733296515572</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733296515572</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,20 +289,16 @@
     <MESSAGE value="Added template." />
     <MESSAGE value="Deleted this file because it's been replaced by Day0.kt" />
     <MESSAGE value="Reoganized with packages. I think that's more convenient." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reoganized with packages. I think that's more convenient." />
+    <MESSAGE value="First try on day 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="First try on day 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/day4/Puzzle.kt</url>
-          <line>30</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/day4/Puzzle.kt</url>
-          <line>38</line>
-          <option name="timeStamp" value="7" />
+          <line>135</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
