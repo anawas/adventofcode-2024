@@ -12,7 +12,7 @@ class Puzzle {
         patterns["bottomtop"]  = listOf(3 * lineLength, 2 * lineLength, 1 * lineLength, 0)
         patterns["topleftbottomright"] = listOf(0, 1 * lineLength + 1, 2 * lineLength + 2, 3 * lineLength + 3)
         patterns["bottomlefttopright"] = listOf(3*lineLength, 2 * lineLength + 1, 1 * lineLength + 2, 3)
-        patterns["toprightbottomleft"] = listOf(3, 1 * lineLength - 1, 2 * lineLength - 2, 3 * lineLength - 3)
+        patterns["toprightbottomleft"] = listOf(3, lineLength +2, 2 * lineLength + 1, 3 * lineLength + 0)
         patterns["bottomrighttopleft"] = listOf(3*lineLength+3, 2 * lineLength + 2, 1 * lineLength + 1, 0)
         return patterns
     }
@@ -96,8 +96,6 @@ class Puzzle {
             for (j in 0 until numOfLines-3) {
                 val letters = CharArray(4)
                 val index = i + j * lineLength
-                //if (index > charArray.size-4) break
-
                 for (k in pattern.indices) {
                     letters[k] = charArray[index + pattern[k]]
                 }
@@ -153,7 +151,7 @@ class Puzzle {
 
         pattern = searchPattern["toprightbottomleft"]!!
         counter = 0
-        for (i in 0 until lineLength) {
+        for (i in 0 until lineLength- 3) {
             for (j in 0 until numOfLines-3) {
                 val letters = CharArray(4)
                 val index = i + j * lineLength
@@ -162,7 +160,6 @@ class Puzzle {
                     letters[k] = charArray[index + pattern[k]]
                 }
                 val word = String(letters)
-                println(word)
                 if (word == "XMAS") {
                     ++counter
                 }
@@ -192,7 +189,6 @@ class Puzzle {
         totalSum += counter
         println("Found ${counter}x in bottomrightttopleft")
 
-
         return totalSum
     }
 
@@ -203,6 +199,6 @@ class Puzzle {
 
 fun main() {
     val quiz = Puzzle()
-    val input = readInput("day4_test")
+    val input = readInput("day4_puzzle")
     println("Soultion: ${quiz.part1(input)}")
 }
