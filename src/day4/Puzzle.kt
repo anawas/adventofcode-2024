@@ -117,27 +117,33 @@ class Puzzle {
             lineLength+1,
             2*lineLength, 2*lineLength+2
         )
-        val searchPatternCharacters = listOf(
-            'M', 'S',
-            'A',
-            'M', 'S'
+        val searchPatternCharacters:List<List<Char>> = listOf(
+            listOf('M', 'M', 'A', 'S', 'S'),
+            listOf('S', 'S', 'A', 'M', 'M'),
+            listOf('M', 'S', 'A', 'M', 'S'),
+            listOf('S', 'M', 'A', 'S', 'M')
         )
 
         var matches = 0
         val charArray: CharArray = puzzle.toCharArray()
-        for (j in 0 until numOfLines-2) {
-            for (i in 0 until lineLength-2) {
-                var index = i + j * lineLength
-                var k = 0
-                while(k <= 4) {
-                    if (charArray[index + searchPatternIndexes[k]] != searchPatternCharacters[k])
+        for (i in 0 until numOfLines-2) {
+            for (j in 0 until lineLength-2) {
+                val index = i + j * lineLength
+                for (pattern in searchPatternCharacters) {
+                    var isMatch:Boolean = true
+                    for (k in pattern.indices) {
+                        if (charArray[index + searchPatternIndexes[k]] != pattern[k]){
+                            isMatch = false
+                            break
+                        }
+                    }
+                    if (isMatch) {
+                        println("Found at $i, $j")
+                        ++matches
                         break
-                    k++
+                    }
                 }
-                println(k)
-                if (k == 4) {
-                    ++matches
-                }
+
             }
         }
         return matches
@@ -146,6 +152,6 @@ class Puzzle {
 
 fun main() {
     val quiz = Puzzle()
-    val input = readInput("day4_test")
+    val input = readInput("day4_puzzle")
     println("Solution: ${quiz.part2(input)}")
 }
