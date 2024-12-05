@@ -122,16 +122,20 @@ class Puzzle {
             'A',
             'M', 'S'
         )
+
         var matches = 0
         val charArray: CharArray = puzzle.toCharArray()
         for (j in 0 until numOfLines-2) {
             for (i in 0 until lineLength-2) {
                 var index = i + j * lineLength
-                var sum = 0
-                for (k in 0 until 5) {
-                    sum += (charArray[index + searchPatternIndexes[k]] - searchPatternCharacters[k])
+                var k = 0
+                while(k <= 4) {
+                    if (charArray[index + searchPatternIndexes[k]] != searchPatternCharacters[k])
+                        break
+                    k++
                 }
-                if (sum == 0) {
+                println(k)
+                if (k == 4) {
                     ++matches
                 }
             }
