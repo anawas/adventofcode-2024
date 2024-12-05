@@ -30,7 +30,26 @@ class Puzzle {
         val productionLists: List<List<Int>> = getProductionRules(input, orderingRules.size)
         println("Found ${orderingRules.size} page ordering rules")
         println("and ${productionLists.size} production rules")
-        return orderingRules.size
+        var sum: Int = 0
+        for (i in productionLists.indices) {
+            val pList = productionLists[i]
+            var validList = true
+            for (rule in orderingRules) {
+                val firstIdx = pList.indexOf(rule.firstPage)
+                val secondIdx = pList.indexOf(rule.secondPage)
+                if (firstIdx == -1 || secondIdx == -1) {
+                    continue
+                }
+                if (firstIdx > secondIdx) {
+                    validList = false
+                    break
+                }
+            }
+            if (validList) {
+                sum += pList[(pList.size-1)/2]
+            }
+        }
+        return sum
     }
 
     fun part2(input: List<String>): Int {
@@ -41,5 +60,6 @@ class Puzzle {
 fun main() {
     val quiz = Puzzle()
     val input = readInput("day5_puzzle")
-    check(quiz.part1(input) == 21)
+    print("Solution: ${quiz.part1(input)}")
+    //check(quiz.part1(input) == 143)
 }
