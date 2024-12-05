@@ -19,8 +19,7 @@ class Puzzle {
         val pageProductionList:MutableList<List<Int>> = mutableListOf()
         for (i in startIndex until input.size) {
             if (input[i].isBlank()) continue
-            val tokens = input[i].split(",")
-            val production = tokens.stream().map(Integer::parseInt).toList()
+            val production = input[i].split(",").map { it.trim().toInt() }
             pageProductionList.add(production)
         }
         return pageProductionList
@@ -41,6 +40,6 @@ class Puzzle {
 
 fun main() {
     val quiz = Puzzle()
-    val input = readInput("day5_test")
+    val input = readInput("day5_puzzle")
     check(quiz.part1(input) == 21)
 }
