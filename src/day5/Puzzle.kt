@@ -53,13 +53,39 @@ class Puzzle {
     }
 
     fun part2(input: List<String>): Int {
-        return input.size
+        val orderingRules: List<PageOrderingRule> = getPageOrderingRules(input)
+        val productionLists: List<List<Int>> = getProductionRules(input, orderingRules.size)
+        println("Found ${orderingRules.size} page ordering rules")
+        println("and ${productionLists.size} production rules")
+        var sum: Int = 0
+
+        for (i in productionLists.indices) {
+            val pList = productionLists[i]
+            for (rule in orderingRules) {
+                val firstIdx = pList.indexOf(rule.firstPage)
+                val secondIdx = pList.indexOf(rule.secondPage)
+                if (firstIdx == -1 || secondIdx == -1) {
+                    continue
+                }
+                if (firstIdx > secondIdx) {
+                    //Need to take into account that several rules may be broken
+                    val newList = pList.toMutableList()
+                    val temp = newList[firstIdx]
+                    newList[firstIdx] = newList[secondIdx]
+                    newList[secondIdx] = temp
+
+                    sum += newList[(newList.size-1)/2]
+                    break
+                }
+            }
+        }
+        return sum
     }
 }
 
 fun main() {
     val quiz = Puzzle()
-    val input = readInput("day5_puzzle")
-    print("Solution: ${quiz.part1(input)}")
+    val input = readInput("day5_test")
+    print("Solution: ${quiz.part2(input)}")
     //check(quiz.part1(input) == 143)
 }
