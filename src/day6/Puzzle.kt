@@ -12,8 +12,8 @@ class Puzzle {
         LEFT, RIGHT, UP, DOWN, NOWHERE
     }
 
-    val guardSteps:MutableMap<GuardFacingDirection, IntArray> = mutableMapOf(
-        GuardFacingDirection.UP to intArrayOf(-1,0),
+    val guardSteps: MutableMap<GuardFacingDirection, IntArray> = mutableMapOf(
+        GuardFacingDirection.UP to intArrayOf(-1, 0),
         GuardFacingDirection.DOWN to intArrayOf(1, 0),
         GuardFacingDirection.LEFT to intArrayOf(0, -1),
         GuardFacingDirection.RIGHT to intArrayOf(0, 1)
@@ -23,7 +23,7 @@ class Puzzle {
      * This is for debugging purposes. It's helpful to
      * draw a map and visualize the path of the guard.
      */
-    private fun plotMap(map:MutableList<CharArray>):Unit {
+    private fun plotMap(map: MutableList<CharArray>): Unit {
         for (i in 0 until mapHeight) {
             for (j in 0 until mapWidth) {
                 print(map[i][j])
@@ -54,12 +54,26 @@ class Puzzle {
 
         plotMap(map)
         println("Guard is at ${guardPosition[0]}, ${guardPosition[1]}")
-        return input.size
-    }
 
-    fun part2(input: List<String>): Int {
-        return input.size
-    }
+        val dir = guardSteps[guardIsFacing]
+        do  {
+            val lookToX = guardPosition[0] + (dir?.get(0) ?: 0)
+            val lookToY = guardPosition[1] + (dir?.get(1) ?: 0)
+            map[guardPosition[0]][guardPosition[1]] = 'X'
+
+            guardPosition[0] = guardPosition[0] + (dir?.get(0) ?: 0)
+            guardPosition[1] = guardPosition[1] + (dir?.get(1) ?: 0)
+            println("Guard is at ${guardPosition[0]}, ${guardPosition[1]}")
+        } while (map[lookToX][lookToY] == '.')
+
+        plotMap(map)
+
+    return input.size
+}
+
+fun part2(input: List<String>): Int {
+    return input.size
+}
 }
 fun main() {
     val quiz = Puzzle()
