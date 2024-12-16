@@ -30,14 +30,42 @@ class Puzzle {
         return variationsList
     }
 
-    fun part1(input: List<String>): Int {
-        val numOfOperators = 1
-        val variations: List<CharArray> = getVariations(numOfOperators)
-
-        for (v in variations) {
-            println(v)
+    fun applyOperator(a: Long, b: Long, operator: Char): Long {
+        when(operator) {
+            '+' -> return a+b
+            '*' -> return a*b
         }
-        return input.size
+        return 0
+    }
+
+    fun part1(input: List<String>): Long {
+        var calibrationResult: Long = 0
+
+        for (line in input) {
+            var expectedResultFound = false
+            var tokens = line.split(":")
+            val expectedResult = tokens[0].trim().toLong()
+            val numbers = tokens[1].trim().split("\\s+".toRegex()).map { it.toLong()}
+            val numOfOperators = numbers.size - 1
+            val variations: List<CharArray> = getVariations(numOfOperators)
+
+            for (operator in variations) {
+                var sum = numbers[0]
+                for (i in 0 until numOfOperators) {
+                    sum = applyOperator(sum, numbers[i+1], operator[i])
+                }
+                if (sum == expectedResult) {
+                    expectedResultFound = true
+                    break
+                }
+            }
+            if (expectedResultFound) {
+                println("Result $expectedResult found")
+                calibrationResult += expectedResult
+            }
+        }
+
+        return calibrationResult
     }
 
 
@@ -47,6 +75,7 @@ class Puzzle {
 }
 fun main() {
     val quiz = Puzzle()
-    val input = readInput("day7_test")
-    check(quiz.part1(input) == 9)
+    val input = readInput("day7_puzzle")
+    //check(quiz.part1(input) == 9)
+    println("Solution: ${quiz.part1(input)}")
 }
